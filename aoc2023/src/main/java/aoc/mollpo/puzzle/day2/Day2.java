@@ -32,7 +32,7 @@ public class Day2 {
 
     private Map<Integer, List<Game>> parseInput() throws FileNotFoundException {
         Map<Integer, List<Game>> result = new HashMap<>();
-        for (String s : InputParser.parseStringsFromFile("C:\\GitRepos\\advent-.of-code-2023\\aoc2023\\src\\main\\resources\\day2.txt")) {
+        for (String s : InputParser.parseStringsFromFile("day2.txt")) {
             String gamesString = s.substring(s.indexOf(":") + 1);
             String[] rounds = gamesString.split(";");
             List<Game> games = new ArrayList<>();

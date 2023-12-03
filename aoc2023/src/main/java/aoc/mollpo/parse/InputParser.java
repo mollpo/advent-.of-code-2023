@@ -18,7 +18,9 @@ public class InputParser {
     }
 
     public static List<String> parseStringsFromFile(String filename) throws FileNotFoundException {
-        File file = new File(filename);
+        ClassLoader classLoader = InputParser.class.getClassLoader();
+
+        File file = new File(classLoader.getResource(filename).getFile());
         Scanner scanner = new Scanner(file);
         List<String> strings = new ArrayList<>();
         while (scanner.hasNextLine()) {

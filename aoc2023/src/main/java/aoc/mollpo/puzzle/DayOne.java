@@ -7,7 +7,7 @@ import java.util.List;
 
 public class DayOne {
     public static int partOne() throws FileNotFoundException {
-        List<String> input = InputParser.parseStringsFromFile("C:\\GitRepos\\advent-.of-code-2023\\aoc2023\\src\\main\\resources\\day1.txt");
+        List<String> input = InputParser.parseStringsFromFile("day1.txt");
         int result = 0;
         for (String s : input) {
             String first = null;
